@@ -1,0 +1,68 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.986)), url(img/PokemonWallpaper.png);
+    background-size: cover;
+    background-size: 200vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: auto;
+    padding-bottom: 1rem;
+}
+
+header {
+    width: 79, 5vw;
+    height: 9rem;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+.headerContent {
+    margin: 2rem;
+    text-align: center;
+}
+
+.content {
+    border-radius: 50px;
+    border: 1px solid lightblue;
+    width: auto;
+    height: auto;
+    padding: 5px 10px 10px 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-30px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
