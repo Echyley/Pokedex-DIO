@@ -11,9 +11,11 @@ function load_more_pokemons(offset, limit) {
 	function convert_pokemon_to_html(pokemon) {
 		return `<li class="pokemon ${pokemon.type}">
 					<div class"main">
-						<span  class="name">${pokemon.name}</span>
-						<span class="number">#${pokemon.id}</span>
-					
+
+					<span class="number">#${pokemon.id}</span>
+
+					<span  class="name">${pokemon.name}</span>
+						
 					<ol class="types">
 						${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
 					</ol>
