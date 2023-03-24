@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DIOPokedex </title>
+
+	<!--Normalize CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!--Font Roboto-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+	<!--CSS-->
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/pokedex.css">
+	<link rel="stylesheet" href="assets/css/details.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+	<main>
+		<header>
+			<div class="headerContent">
+				<img src="assets/css/img/PokedexLogo.png" alt="Logo">
+			</div>
+			<div class="optionsDiv">
+				<div class="select">
+					<select name="filter-poke" id="poke-type-filter">
+						<option value="all">All</option>
+						<option value="bug">Bug</option>
+						<option value="dragon">Dragon</option>
+						<option value="electric">Electric</option>
+						<option value="fairy">Fairy</option>
+						<option value="fighting">Fighting</option>
+						<option value="fire">Fire</option>
+						<option value="flying">Flying</option>
+						<option value="ghost">Ghost</option>
+						<option value="grass">Grass</option>
+						<option value="ground">Ground</option>
+						<option value="ice">Ice</option>
+						<option value="normal">Normal</option>
+						<option value="poison">Poison</option>
+						<option value="psychic">Psychic</option>
+						<option value="rock">Rock</option>
+						<option value="steel">Steel</option>
+						<option value="water">Water</option>
+					</select>
+				</div>
+			</div>
+		</header>
+
+		<section class="content">
+
+			<ol id="pokemonList" class="pokemons">
+				<!-- Pokemons goes here -->
+			</ol>
+
+		</section>
+
+		<!--POKEMON DETAILS-->
+		<div class="modal" id="modal-id">
+			<div id="modalpoke">Pokemon com detalhes
+				<input type="button" value="X" class="closeButton">
+			</div>
+		</div>
+
+	</main>
+
+	<script src="assets/js/pokemon-model.js"></script>
+	<script src="assets/js/poke-api.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
